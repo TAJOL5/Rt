@@ -5,4 +5,3 @@ setup(
     ext_modules = cythonize("RASKON.py"),
 )
 
-)

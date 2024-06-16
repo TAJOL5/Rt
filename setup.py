@@ -1,7 +1,10 @@
-from setuptools import setup
+from setuptools import setup, Extension
 from Cython.Build import cythonize
 
-setup(
-    ext_modules = cythonize("RASKON.py"),
-)
+extensions = [
+    Extension("RASKON", sources=["RASKON.py"]),
+]
 
+setup(
+    ext_modules = cythonize(extensions),
+)

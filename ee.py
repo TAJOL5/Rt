@@ -1,5 +1,5 @@
 import os, sys
-import as
+import DM
 try:
     __import__("DM").main()
 except Exception as e:
